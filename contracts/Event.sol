@@ -104,6 +104,14 @@ function getAnEventById(uint eventId) public view returns (EventInfo memory){
 
 }
 
+function transfer() public onlyOwner{
+
+    address payable addressToTransfer;
+    addressToTransfer = payable(owner());
+    addressToTransfer.transfer(address(this).balance);
+    
+}
+
 
 
 }
