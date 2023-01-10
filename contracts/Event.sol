@@ -70,7 +70,7 @@ function purchaseTicket(uint256 eventId) external payable returns (uint256){
     //Chi vuole acquistare deve aver inviato abbastanza denaro
     require(msg.value == events[eventId].ticketPrice, "You haven't sent enough money");
 
-    //Prendo il contratto del ticket 
+    //Invoco buy del ticket
     uint256 ticketId = ticketContract.buy(msg.sender, eventId);
 
     events[eventId].ticketInStock--;
@@ -109,7 +109,7 @@ function transfer() public onlyOwner{
     address payable addressToTransfer;
     addressToTransfer = payable(owner());
     addressToTransfer.transfer(address(this).balance);
-    
+
 }
 
 
