@@ -1,0 +1,35 @@
+input {
+    border: 3px solid #f72e18;
+    border-radius: 8px;  
+    height: 20px;
+    
+}
+
+input[type = text]{
+    width: 300px;
+}
+
+input[type = button]{
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 0px;
+}
+
+label {
+
+    font: normal 25px Cookie, Arial, Helvetica, sans-serif;
+
+}
+
+form{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    margin: auto;
+}
+
+.centerform {
+    background: #7f7fd5;
+    background: linear-gradient(to right, #91eae4, #86a8e7, #7f7fd5);
+display: flex;
+align-items: center;
+}

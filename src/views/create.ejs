@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="./css/headerstyle.css">
+	<link rel="stylesheet" type="text/css" href="./css/footerstyle.css">
+	<link rel="stylesheet" type="text/css" href="./css/createstyle.css">
+	<link href='https://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+	
+	<header>
+		<div class="head_container">
+			<div class="logo">
+				<img src="./images/logo.png">
+				<span>DeEvent</span>
+			</div>
+			<div class="menu" id="myTopnav">
+				<ul>
+					<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="openNav()">&#9776;</a>
+					<li><a href="./">Events</a></li>
+					<li class="create_hiding"><a href="./create">Create Event</a></li>
+					<li><a href="./myTickets">MyTickets</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<div class="labelPunt">
+
+	</div>
+	<div id="mySidenav" class="sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<li><a href="./">Home</a></li>
+		<li clas="create_hiding"><a href="./create.ejs">CreateEvent</a></li>
+		<li><a href="./myTickets">MyTickets</a></li>
+	</div>
+
+<div class="centerform">
+	<form >
+		<label for="event_name">Event Name</label><br>
+		<input type="text" id="event_name"><br><br>
+		<label for="tot_tickets">Total Tickets</label><br>
+		<input type="number" id="tot_tickets" value="John"><br><br>
+		<label for="price_ticket">Ticket Price</label><br>
+		<input type="number" id="price_ticket" value="John"><br><br>
+		<label for="data">Event data</label><br>
+		<input type="date" id="data"><br><br>
+		<input type="button" class="submit" id="create_event" value="Submit">
+	</form> 
+</div>
+
+
+
+	<footer>
+		<div class="foot_container">
+			<div class="logoFooter">
+				<span>DeCasino</span>
+			</div>
+		</div>
+	</footer>
+
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.7.0/web3.min.js" integrity="sha512-C63V0mFzwl8KV2fRz0QJNKX0d9877urOLSUq5WUq8nUOhDl69hKdGr9mAvl57k47GNjqEMAtiufsvDnk7xs8+w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/truffle-contract@4.0.31/dist/truffle-contract.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js" integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script type="text/javascript" src="./js/createEvent.js"></script>
+<script type="text/javascript" src='./js/header.js'></script>
+
+</html>
